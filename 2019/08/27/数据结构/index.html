@@ -11,7 +11,8 @@
     <meta name="google" content="notranslate">
     <meta name="keywords" content="Ruby,"> 
     <meta name="description" content="19年8月27号
-"> 
+19年8月29号#includeusing namespace std;
+#include&amp;lt;stdlib.hclass array{private:    int maxle,"> 
     <meta name="author" content="ruby"> 
     <link rel="alternative" href="atom.xml" title="dango&#39;s blog" type="application/atom+xml"> 
     <link rel="icon" href="/img/logo2.png"> 
@@ -64,7 +65,10 @@
         </div>
         <div class="content markdown">
             <h3 id="19年8月27号"><a href="#19年8月27号" class="headerlink" title="19年8月27号"></a>19年8月27号</h3><p><img src="http://pw9s0be7k.bkt.clouddn.com/d2.1.jpg" alt="enter description here"></p>
-
+<h3 id="19年8月29号"><a href="#19年8月29号" class="headerlink" title="19年8月29号"></a>19年8月29号</h3><p>#include<iostream><br>using namespace std;</iostream></p>
+<p>#include&lt;stdlib.h<br>class array<br>{<br>private:<br>    int maxlen;<br>    int len;<br>    int * base;<br>public:<br>    array()<br>    {<br>        maxlen =10;<br>        len = 0;<br>        base = new int[maxlen];<br>    }<br>    void push (int val)<br>    {<br>        base[len]=val;<br>        len++;<br>    }<br>    void insert(int pos,int val)<br>    {<br>        for(int t = len;t&gt;pos;t–)<br>            base[t]=base[t-1];<br>        base[pos]=val;<br>        len++;<br>    }<br>    void erase(int pos)<br>    {<br>        for(int t = pos ; t&lt;len ; t++)<br>            base[t-1]=base[t];<br>        len–;<br>    }<br>    void show()<br>    {<br>        for(int i=0;i&lt;len;i++)<br>            cout&lt;&lt;base[i]&lt;&lt;” “;<br>            cout&lt;&lt;endl;<br>    }</p>
+<p>};<br>int main()<br>{<br>    array t;<br>    t.push(1);<br>    t.push(2);<br>    t.push(3);<br>    t.insert(1,4);<br>    t.show();<br>    t.erase(2);<br>    t.show();<br>    system(“pause”);<br>    return 0;<br>}</p>
+<h4 id="这段代码是顺序表内元素的删减。"><a href="#这段代码是顺序表内元素的删减。" class="headerlink" title="这段代码是顺序表内元素的删减。"></a>这段代码是顺序表内元素的删减。</h4>
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
                 <source type="audio/mpeg" src="">
